@@ -1,0 +1,36 @@
+footer {
+    grid-area: footer;
+    background-color: hsl(214, 39%, 34%);
+    color: #fff;
+
+}
+
+.btn-primary {
+    background-color: #345177 !important;
+    border-color: #345177 !important;
+}
+
+.btn-primary:hover{
+    background-color: #3b5c88 !important;
+    border-color: #3b5c88 !important;
+}
+
+.btn-success:hover{
+    background-color: #31c0a1 !important;
+    color: #fff !important;
+    border-color: #31c0a1 !important;
+}
+
+.btn-success{
+    background-color: #009574 !important;
+    border-color: #009574 !important;
+}
+
+.textoCarousel{
+    color:#69ECC0;
+    background-color:#233134;
+}
+
+h2{
+    color: #009574;
+}

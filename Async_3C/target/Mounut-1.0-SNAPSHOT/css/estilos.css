@@ -1,0 +1,22 @@
+
+.btn-danger{
+    margin-left: 15px;
+    transition: transform 0.5s;
+}
+.btn2{    
+    transition: transform 0.5s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+#logo{
+    display: inline-block;
+    margin-top: 7px;
+    color: #FFFFFF;
+}
+a{
+    color:#FFFFFF;
+}
+
+

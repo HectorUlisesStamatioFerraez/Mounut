@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+.card{
+    position:relative;
+    width: 320px;
+    heigth: 420px;
+    background: #345177;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #009574;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before{
+    top:-70%;
+    transform: skewY(390deg);
+}
+
+.card::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0,0,0,0.1);
+}
+
+.card .imgBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.card .imgBx img{
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+.card:hover .imgBx img{
+    max-width: 50%;
+}
+
+.card .contentBx{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.card .contentBx h3{
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase;
+    Letter-spacing: 1px;
+}
+
+.card .contentBx .price{
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 500;
+    Letter-spacing: 1px;
+}
+
+.card .contentBx .buy{
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #009574;
+    border-radius: 30px;
+    text-transform: uppercase;
+    Letter-spacing:1px;
+    transition: 0.5s;
+}
+
+.card:hover .contentBx .buy{
+    top: 0;
+    opacity: 1;
+}
+
